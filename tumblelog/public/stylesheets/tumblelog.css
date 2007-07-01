@@ -1,0 +1,44 @@
+body { background: #fff; }
+p { font-size: 107%; font-family: "Lucida Grande", "Lucida Sans", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif; margin: 0 0 0.5em 0;}
+h1 { font-size: 136%; font-weight: bold; margin-bottom: 0.5em; }
+h2 { font-size: 122%; font-weight: bold; margin-bottom: 0.5em; }
+h3 { font-size: 122%; margin-bottom: 0.5em; }
+h4 { font-size: 107%; font-weight: bold; margin-bottom: 0.5em; }
+
+strong { font-weight: bold; }
+a:link, a:visited { color: #084A9B; }
+ul {margin: .3em 0 1.5em 0; }
+ul li { margin-bottom: 0.5em; }
+ol {margin: .5em .5em 1.5em; }
+ol li {margin-left: 1.4em; padding-left: 0; background: none; list-style-type: decimal; }
+
+dl { margin: 0 0 1em 0; }
+dt { font-weight:bold; margin-top: 1.3em; }
+dl dl { margin: 0 0 1.5em 30px; }
+
+
+#hd { color: #333; padding: 0 50px; margin: 0;  font-family:arial,verdana,sans-serif;  }
+#hd h1 a, #hd h2 a { color: #333; text-decoration: none; }
+#hd h1 {  font-size: 182%; padding: 20px 0 0 0; margin: 0; }
+#hd h2 { color: #666; margin: 0; padding: 0 10px 20px 10px; }
+#hd p.menu { text-align: right; width: 300px; float: right; padding: 20px 0 0 0; }
+
+#ft { color: #666; font-size: 92%; float: right;  padding: 0 50px; }
+
+.errors {  margin: 0 auto; background: #F69A91; padding: 7px 10px 6px 10px; color: #510; text-align: center; }
+.notice { background: #89AF4D; padding: 7px 10px 6px 10px; color: #051; text-align: center; }
+#flashes ul, #flashes li { list-style: none; }
+
+#bd { padding: 0 50px; }
+#bd h2 a { text-decoration: none; }
+#bd .control_panel { width: 300px; padding: 10px; background-color: #ddd; margin: 0 0 10px 0; }
+
+#bd h2 span a { margin-left: 20px; font-size: 80%; }
+#bd h2 span a {  }
+#bd .about { background-color: #251a1a; padding: 10px; width: 300px; float: right; color: #fff; }
+#bd .about a { color: #ccc; }
+#bd .tags { float: right; }
+#bd ul.tags { list-style: none inside none; display: inline; padding: 0 10px; }
+#bd ul.tags li { float: left; margin-left: 10px; }
+
+hr { border: 1px solid #ccc; margin: 0 50px 20px 50px; clear: both; }

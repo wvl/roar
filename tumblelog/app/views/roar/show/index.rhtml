@@ -1,0 +1,14 @@
+<div class="about">
+	<p>This is tumblelog, written as a demonstration of <a href="http://nanoware.com/roar">Roar</a>, an automated admin (and more) plugin for <a href="http://rubyonrails.com">Ruby on Rails</a>.</p>
+	<p>Log in to see the admin functionality with login: <strong>demo</strong>, password <strong>demo</strong></p>
+</div>
+
+<% if logged_in? %>
+<div class="control_panel"> 
+	<h4><%= link_to("New Post", new_post_path, {:id=>rdom_class(Post, "new_link")}) %> | <%= link_to("New Link", new_link_path, {:id=>rdom_class(Link, "new_link")}) %></h4>
+</div>
+<% end %>
+
+<div id='<%= rdom_class(model_class, "rpage") %>' class="rpage">
+<%= render :roar_partial => "page" %>
+</div>

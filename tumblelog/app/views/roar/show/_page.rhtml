@@ -1,0 +1,11 @@
+<%= roar_table %>
+
+<div>
+<% if roar.table.page.prev? -%>
+<%= link_to 'Newer', contents_path({:page=>roar.table.page.prev.number}) -%>
+<% end -%>
+
+<% if roar.table.page.next -%>
+<%= link_to 'Older', contents_path({:page=>roar.table.page.next.number}) -%>
+<% end -%>
+</div>

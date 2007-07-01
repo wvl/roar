@@ -1,0 +1,2 @@
+<%= link_to h(record.name), tag_path(record) %> 
+<%= link_to("edit", roar_edit_tag_path(:id=>record, :view=>"show"), :id=>rdom_id(record, "edit_link"), :class=>"redit") if logged_in? %>

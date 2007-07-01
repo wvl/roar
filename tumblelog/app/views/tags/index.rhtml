@@ -1,0 +1,7 @@
+<ul class="rpage">
+<% @tags.each do |tag| %>
+	<li class="rrow" id='<%= rdom_id(tag, 'row') %>'>
+  	<%= render :partial=>"tags/admin/show", :locals => {:record => tag} %>
+	</li>
+<% end %>
+</ul>

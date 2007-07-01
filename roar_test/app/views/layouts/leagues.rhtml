@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>roar</title>
+  <%= stylesheet_link_tag 'roar/reset-fonts-grids', 'roar/screen' %>
+  <%= javascript_include_tag 'roar/proto-eff-dd-cont', 'roar/lowpro', 'roar/admin' %>
+  <script type="text/javascript">
+    <%= yield :javascript %>
+  </script>
+</head>
+
+<body>
+<div id="doc1" class="yui-t5">
+	<div id="hd">
+	  <div class="top clearfix">
+  	  <ul id="secondarynav">
+  	    <li><%= link_to 'home', '/' %></li>
+      </ul>
+	    <h1>roar</h1>
+	    <%= render :roar_partial => "main_menu" %>
+	  </div>
+    <div class="yui-gf infobar"> 
+      <div class="yui-u first">
+        <h1>Leagues Template</h1>
+      </div> 
+      <div class="yui-u">
+        <div id="flashes">
+          <div id="flash-notice" class="notice" style="display: <%= flash[:notice] ? 'block' : 'none' %>;"><%= flash[:notice] %></div>
+          <div id="flash-errors" class="errors" style="display: <%= flash[:error] ? 'block' : 'none' %>;"><%= flash[:notice] %></div>
+        </div>
+      </div> 
+    </div>
+	</div>
+	<div id="bd">
+    <div id="yui-main"> 
+       <div class="yui-b">
+ 	       <div class="main">
+           <%= yield %>  
+          </div>
+        </div> 
+    </div> 
+    <div class="yui-b">
+		  <div class="sidebar">
+		  </div>
+    </div>    
+	</div>
+	<div id="ft">
+		<p><a href="http://nanoware.com/roar">roar</a>, a <a href="http://nanoware.com">nanoware</a> production</p>
+	</div>
+</div>
+
+</body>
+</html>

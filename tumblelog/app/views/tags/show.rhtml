@@ -1,0 +1,8 @@
+<h1>tag: <%=h @tag.name %></h1>
+<div>
+	<% @tag.taggables.each do |taggable| %>
+		<div id='<%= rdom_id(taggable, 'row') %>' class='rrow'>
+			<%= render :partial => "#{taggable.type.to_s.downcase.pluralize}/show", :locals => {:record => taggable} %>
+		</div>
+	<% end %>
+</div>

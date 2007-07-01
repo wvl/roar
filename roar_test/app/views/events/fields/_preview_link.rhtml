@@ -1,0 +1,31 @@
+<script>
+var Preview = Behavior.create({
+	initialize: function() {
+	},
+	
+	onclick: function() {
+    Progress.addAfter(this.element);
+		var form = this.element.up('FORM');
+		var modalbox = Modalbox.show(this.title, "", {width:600});
+		new Ajax.Request(this.element.href, {asynchronous:true, method:'post', 
+			onSuccess: function(request) { 
+				Progress.removeAll(); 
+				modalbox.insertContent(new String(request.responseText));
+			},
+			onFailure: function(request) {
+				Progress.removeAll();
+				Flash.errors("Something bad happened.");
+			},
+			parameters:Form.serialize(form)}); 
+		return false;
+	}
+});
+
+Event.addBehavior({
+  'a.preview-link': Preview
+});
+</script>
+
+<% form_field(field, record) do %>
+<%= link_to "preview", preview_events_path, :class=>"preview-link", :title=> "Preview Event" %>
+<% end %>

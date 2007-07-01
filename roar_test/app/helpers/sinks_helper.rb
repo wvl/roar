@@ -1,0 +1,2 @@
+module SinksHelper
+end

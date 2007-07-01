@@ -1,0 +1,8 @@
+<ul>
+  <% for user in @records do -%>
+  <li id='<%= rdom_id(user) %>'>
+  <div><%= user.login %> <%= "(#{user.name})" %></div>
+  <div class="sub"><%= user.email %></div>
+  </li>
+  <% end %>
+</ul>

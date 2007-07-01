@@ -1,0 +1,88 @@
+body { color:#333; max-width: 40em; padding: 10px 20px; }
+p { font-size: 100%; font-family: "Georgia"; line-height: 1.2; margin: 0 0 0.5em 0; }
+h1 { font-size: 136%; font-weight: bold; margin: 1em 0; }
+h2 { font-size: 122%; font-weight: bold; line-height: 1.1; margin: 1em 0; }
+h3 { font-size: 122%; line-height: 1.1; margin: 1em 0; }
+h4 { font-size: 107%; font-weight: bold; margin: 1em 0; }
+h1,h2,h3 { color: #000; }
+h1 a, h2 a, h3 a, li a  { text-decoration: none; }
+
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+a { color: #084A9B; } 
+a:hover { text-decoration: underline; }
+blockquote {	margin-left:1em;	padding-left:1em;	border-left:2px solid #444;	color:#444; }
+
+p.compact { margin-bottom: 0; }
+ul { list-style: disc; margin-bottom: 1.5em; padding: 0 0 0 14px; }
+li { }
+
+pre {	margin: 0 0 0.5em 2em; background-color: #eff; border: solid 1px #bdd; padding: 4px; }
+
+.ruby .normal {}
+.ruby .comment { color: #005; font-style: italic; }
+.ruby .keyword { color: #A00; font-weight: bold; }
+.ruby .method { color: #077; }
+.ruby .class { color: #074; }
+.ruby .module { color: #050; }
+.ruby .punct { color: #447; font-weight: bold; }
+.ruby .symbol { color: #099; }
+.ruby .string { color: #944; background: #FFE; }
+.ruby .char { color: #F07; }
+.ruby .ident { color: #004; }
+.ruby .constant { color: #07F; }
+.ruby .regex { color: #B66; background: #FEF; }
+.ruby .number { color: #F99; }
+.ruby .attribute { color: #7BB; }
+.ruby .global { color: #7FB; }
+.ruby .expr { color: #227; }
+.ruby .escape { color: #277; }
+
+.xml .normal {}
+.xml .namespace { color: #B66; font-weight: bold; }
+.xml .tag { color: #F88; }
+.xml .comment { color: #005; font-style: italic; }
+.xml .punct { color: #447; font-weight: bold; }
+.xml .string { color: #944; }
+.xml .number { color: #F99; }
+.xml .attribute { color: #BB7; }
+
+.html .normal {}
+.html .namespace { color: #B66; font-weight: bold; }
+.html .tag { color: #F88; }
+.html .comment { color: #005; font-style: italic; }
+.html .punct { color: #447; font-weight: bold; }
+.html .string { color: #944; }
+.html .number { color: #F99; }
+.html .attribute { color: #BB7; }
+
+.maruku-att-origin {
+	padding-left: 30px;
+	margin-top: -1em;
+	font-size: 70%;
+	color: grey;
+}
+
+.maruku-att-default {
+	padding-left: 30px;
+	margin-top: -1.4em;
+	margin-bottom: +1em;
+	font-size: 90%;
+}
+
+a.maruku-link-samedoc {
+	color: red;
+}
+
+a.maruku-link-local {
+	color: green;	
+}
+
+a.maruku-link-external {
+	color: blue;		
+}
+
+
+

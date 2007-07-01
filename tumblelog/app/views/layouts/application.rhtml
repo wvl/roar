@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Roar</title>
+  <%= stylesheet_link_tag 'roar/reset-fonts-grids', 'tumblelog', 'roar/roar' %>
+  <%= javascript_include_tag :defaults, 'roar/lowpro', 'roar/admin' %>
+  <script type="text/javascript">
+    <%= yield :javascript %>
+  </script>
+</head>
+
+<body>
+<div id="doc1" class="yui-t5">
+	<div id="hd">
+		<p class="menu">
+			<%= link_to "Admin", roar_posts_path %><br />
+			<% if logged_in? %>
+			Logged in as <%= User.current_user.login %>, <%= link_to "logout", logout_path %>
+			<% else %>
+			<%= link_to "login", login_path %>
+			<% end %>
+		</p>
+		<h1><%= link_to "Tumblelog", home_path %></h1>
+		<h2>Tumblin since 2007: <%= link_to "all", home_path %>, <%= link_to "posts", posts_path %>, <%= link_to "links", links_path %>, <%= link_to "tags", tags_path %></h2>
+	</div>
+	<div id="bd">
+    <div id="flashes">
+      <div id="flash-notice" class="notice" style="display: <%= flash[:notice] ? 'block' : 'none' %>;"><%= flash[:notice] %></div>
+      <div id="flash-errors" class="errors" style="display: <%= flash[:error] ? 'block' : 'none' %>;"><%= flash[:notice] %></div>
+    </div>
+   	<%= yield %>  		
+	</div>
+	<div id="ft">
+	  <p>Tumblelog, a demo of <a href="http://nanoware.com/roar/">Roar</a></p>
+	</div>
+</div>
+
+</body>
+</html>

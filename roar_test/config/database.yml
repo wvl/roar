@@ -1,0 +1,24 @@
+development:
+  adapter: mysql
+  database: roar_development
+  username: root
+  password:
+  host: localhost
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  #database: ":memory:"
+
+  # adapter: mysql
+  # database: roar_test
+  # username: root
+  # password:
+  # host: localhost
+
+production:
+  adapter: mysql
+  database: roar_development
+  username: root
+  password: 
+  host: localhost

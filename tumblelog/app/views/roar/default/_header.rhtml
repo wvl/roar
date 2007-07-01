@@ -1,0 +1,14 @@
+<h1>Tumblelog</h1>
+ <ul id="mainnav">
+	<li><%= link_to "Posts", roar_posts_path %></li>
+	<li><%= link_to "Links", roar_links_path %></li>
+  <li><%= link_to "Users", roar_users_path %></li>
+  <li><%= link_to "Tags", roar_tags_path %></li>
+ </ul>
+<ul id="secondarynav">
+  <li><%= link_to 'home', '/' %></li>
+	<% if logged_in? %>
+  <li> Logged in as <%= User.current_user.login %></li>
+  <li><%= link_to "logout", logout_path %></li>
+	<% end %>
+</ul>

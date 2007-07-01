@@ -1,0 +1,4 @@
+<%= render :partial => "contents/tags", :locals => { :tags => record.tags } %>
+<h2><%=h record.title %> <span><%= link_to "Edit", edit_post_path(record), :class=>"redit", :id=>rdom_id(record, "edit_link") if logged_in? %></span></h2>
+<%= record.body_html %>
+<hr />
