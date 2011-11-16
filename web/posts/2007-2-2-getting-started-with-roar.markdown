@@ -1,8 +1,7 @@
---- 
-title: Getting started with Roar
-layout: post
----
-<p>This is an introductory screencast to getting started with Roar.  It takes you from creating a rails app, installing the plugin, to writing your first admin interface in under 5 minutes.</p>
+Getting started with Roar
+-------------------------
+
+This is an introductory screencast to getting started with Roar.  It takes you from creating a rails app, installing the plugin, to writing your first admin interface in under 5 minutes.
 
 <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="750" height="620">
  <param name="src" value="http://nanoware.com/assets/2007/2/2/roar_getting_started.mov">

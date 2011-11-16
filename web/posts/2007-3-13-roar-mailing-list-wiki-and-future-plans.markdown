@@ -1,7 +1,6 @@
---- 
-title: Roar mailing list, wiki and future plans
-layout: post
----
+Roar mailing list, wiki and future plans
+----------------------------------------
+
 I am happy to see people starting to use roar in development.  As it is used, some great questions, ideas and problems have emerged.  To collect all these, I've added a "mailing list":http://rubyforge.org/mail/?group_id=2958 and set up a "wiki":http://wiki.nanoware.com/roar/.   Please do visit these -- contributions are most welcome!
 
 * "http://rubyforge.org/mail/?group_id=2958":http://rubyforge.org/mail/?group_id=2958 -- Mailing List

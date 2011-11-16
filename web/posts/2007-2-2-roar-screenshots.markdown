@@ -1,12 +1,11 @@
---- 
-title: Roar screenshots
-layout: post
----
-h3. News List
+Roar screenshots
+----------------
 
-<img src="img/news_list.png" />
+### News List
 
-<macro:code lang="ruby">
+<img src="https://github.com/wvl/roar/raw/master/web/posts/img/news_list.png" />
+
+```ruby
 class NewsController < ApplicationController
   roar :subdomain => "admin" do
     order "posted_at DESC"
@@ -33,13 +32,13 @@ class NewsController < ApplicationController
       select_field :status, :choices => News.status_options, :prompt=>true
     end
   end
-</macro:code>
+```
 
-h3. Edit Event
+### Edit Event
 
-<img src="img/edit_event.png" />
+<img src="https://github.com/wvl/roar/raw/master/web/posts/img/edit_event.png" />
 
-<macro:code lang="ruby">
+```ruby
 class EventsController < ApplicationController
   roar :subdomain=>"admin" do
     order "date DESC"
@@ -65,15 +64,15 @@ class EventsController < ApplicationController
     end
   end
 end
-</macro:code>
+```
 
-h3. Leagues and Divisions
+### Leagues and Divisions
 
 This shot illustrates nested resources, with inline editing -- Divisions are nested within Leagues.
 
-<img src="img/leagues.png" />
+<img src="https://github.com/wvl/roar/raw/master/web/posts/img/leagues.png" />
 
-<macro:code lang="ruby">
+```ruby
 class LeaguesController < ApplicationController
   roar :subdomain=>"admin" do
     order "year DESC"
@@ -108,17 +107,17 @@ class DivisionsController < ApplicationController
     end
   end  
 end
-</macro:code>
+```
 
-h3. New Game 
+### New Game 
 
 This shot illustrates the scoped select field in action.  Divisions are scoped to a League, and Teams are scoped to the Division.
 
 This shot also illustrates the custom actions in place (:save_and_add_another).
 
-<img src="img/new_game.png" />
+<img src="https://github.com/wvl/roar/raw/master/web/posts/img/new_game.png" />
 
-<macro:code lang="ruby">
+```ruby
 class GamesController < ApplicationController
   roar :subdomain => "admin" do
     order "scheduled_at DESC"
@@ -157,5 +156,4 @@ class GamesController < ApplicationController
     end
   end
 end
-</macro:code>
-
+```

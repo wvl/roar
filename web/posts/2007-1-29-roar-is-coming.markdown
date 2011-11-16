@@ -1,8 +1,7 @@
---- 
-title: Roar is coming
-layout: post
----
-<macro:code lang="ruby">
+Roar is coming
+--------------
+
+```ruby
 class PostsController < ApplicationController
   roar do  
     per_page 5
@@ -28,4 +27,4 @@ class PostsController < ApplicationController
     end
   end
 end
-</macro:code>
+```

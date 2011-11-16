@@ -1,14 +1,12 @@
---- 
-title: Tumblelog, the roar demo
-layout: post
----
+Tumblelog, the roar demo
+
 I wanted an app to showcase some of Roar's capabilities, so I put up a "tumblelog":http://roardemo.nanoware.com.
 
-<a href="http://roardemo.nanoware.com"><img src="img/tumblelog_frontend_500.png" /></a>
+<a href="http://roardemo.nanoware.com"><img src="https://github.com/wvl/roar/raw/master/web/posts/img/tumblelog_frontend_500.png" /></a>
 
 One of the things it highlights is the ability to break out of the admin backend and easily edit resources in place.  If there's interest, I might go into a more detailed walkthrough of building this app.  In the meantime, grab the source, check it out, and let me know if there are any questions.
 
-<img src="img/tumblelog_backend.png" />
+<img src="https://github.com/wvl/roar/raw/master/web/posts/img/tumblelog_backend.png" />
 
 Getting started:
 
